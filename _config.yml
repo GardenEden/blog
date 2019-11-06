@@ -179,15 +179,15 @@ sidebar:
   description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/outchain/player?type=0&id=72383752&auto=0&height=32"></iframe>'
   nav:
   - title: '<i class="fas fa-home fa-fw"></i> 首页'
-    href: /
+    href: /blog
   - title: '<i class="fab fa-readme fa-fw"></i> 关于'
-    href: /about
+    href: /blog/about
   - title: '<i class="fas fa-comments fa-fw"></i> 留言'
-    href: /comments
+    href: /blog/comments
   - title: '<i class="fas fa-tags fa-fw"></i> 标签'
-    href: /tags
+    href: /blog/tags
   - title: '<i class="fas fa-archive fa-fw"></i> 归档'
-    href: /archive
+    href: /blog/archive
   simple_jekyll_search:
     enable: true
     autoloader: /blog/public/simple-jekyll-search/autoloader.js

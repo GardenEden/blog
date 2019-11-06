@@ -13,8 +13,8 @@
 }
 #waifu {
 	position: fixed;
-	bottom: -1000px;
-	left: 0;
+	bottom: -600px;
+	right: 0;
 	z-index: 1;
 	line-height: 0;
 	transition: transform .3s ease-in-out;

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 技术收集贴
+title: 技术收集
 ---
 ## 近期
 

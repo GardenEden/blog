@@ -277,6 +277,15 @@ valine:
   avatarForce: false # 每次访问强制拉取最新的评论列表头像
   recordIP: true # 记录评论者IP
 
+gitment:
+  enable: true
+  githubID: 53973375
+  repo: yourrepo
+  ClientID: 3f3e88ba86b90bd55c3a
+  ClientSecret: 22ffe472ce2c548ed3b2b7027aaebdf094d605aa
+  lazy: true
+
+
 page404:
   search_children: # 腾讯公益
     enable: true

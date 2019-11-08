@@ -8,7 +8,7 @@ title: 标签
 
 {% for post in tag[1] %}
 
- - [{{ post.title }}]({{ post.url }}) <small>{{ post.date | date_to_string }}</small>
+ - [{{ post.title }}]({{ post.url }}) <small>{{ post.date | date: "%Y-%m-%d"  }}</small>
 
 {% endfor %}
 

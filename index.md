@@ -6,7 +6,7 @@ title: 技术收集
 
 {% for post in site.posts limit:5 %}
 
-- [{{ post.title }}]({{ post.url }}), *{{ post.date | date_to_string }}*
+- [{{ post.title }}]({{ post.url }}), *{{ post.date | date: "%Y-%m-%d" }}*
 
 {% if post.description %}
 

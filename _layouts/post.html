@@ -46,7 +46,7 @@ layout: comments
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
-          <small>{{ post.date | date_to_string }}</small>
+          <small>{{ post.date | date: "%Y-%m-%d" }}</small>
         </a>
       </li>
       {% endfor %}

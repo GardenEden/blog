@@ -34,18 +34,6 @@ head: # 删改前确定知道自己在做什么
     value: google-site-verification
   - key: content
     value: nPdasYPa3g2TEdnqNqejn2X5t0aY5HdUt-NcMO0bykQ
-- tag: meta # baidu站点验证
-  var:
-  - key: name
-    value: baidu-site-verification
-  - key: content
-    value: bEFDJ1LvXb
-- tag: meta # yandex站点验证
-  var:
-  - key: name
-    value: yandex-verification
-  - key: content
-    value: 52253e02830b443c
 - tag: link
   var:
   - key: rel

@@ -3,3 +3,19 @@ layout: page
 ---
 {{ content }}
 
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '', // 可选。默认为 location.href
+  owner: '53973375',
+  repo: 'gardeneden.github.io',
+  oauth: {
+    client_id: '4345d573b962b080962d',
+    client_secret: '6c5f460a219552e64c0c9b0939b11903ea687a9d',
+  },
+})
+gitment.render('container')
+</script>
+

@@ -186,7 +186,7 @@ sidebar:
     href: /
   - title: '<i class="fab fa-readme fa-fw"></i> 关于'
     href: /about
-  - title: '<i class="fas fa-comments fa-fw"></i> 留言'
+  - title: '<i class="fas fa-comments fa-fw"></i> 常用命令'
     href: /comments
   - title: '<i class="fas fa-tags fa-fw"></i> 标签'
     href: /tags
@@ -261,17 +261,6 @@ post:
       src: 
     - id: alipay
       src: 
-
-
-gitment:
-  enable: true
-  githubID: 53973375
-  repo: yourrepo
-  ClientID: 3f3e88ba86b90bd55c3a
-  ClientSecret: 22ffe472ce2c548ed3b2b7027aaebdf094d605aa
-  lazy: true
-
-
 page404:
   search_children: # 腾讯公益
     enable: true

@@ -128,7 +128,7 @@ wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_insta
 yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
 ```
 * 配合使用
-	- 破解版宝塔面板 https://btpanel.net/
+	- 破解版宝塔面板 [https://btpanel.net/](https://btpanel.net/)
 >某萝莉大神，喜欢他的分享音乐，可惜找不到了
 	- 多合一脚本 [https://btpanel.net/download/kaichou.html](https://btpanel.net/download/kaichou.html)
 

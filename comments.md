@@ -118,9 +118,9 @@ bash <(curl -s -L https://git.io/v2ray.sh)
 ```shell
 wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
 ```
-	- 各类工具下载地址  https://tlanyan.me/v2ray-clients-download/
-	- 最全工具（需fq）https://www.ssrshare.com/download/list/
-	- 最全的免费ssr v2ray 分享平台 https://www.ssrtool.com/tool/free_ssr
+	- 各类工具下载地址  [https://tlanyan.me/v2ray-clients-download/](https://tlanyan.me/v2ray-clients-download/)
+	- 最全工具（需fq）[https://www.ssrshare.com/download/list/](https://www.ssrshare.com/download/list/)
+	- 最全的免费ssr v2ray 分享平台 [https://www.ssrtool.com/tool/free_ssr](https://www.ssrtool.com/tool/free_ssr)
 
 
 ### 宝塔面板
@@ -130,4 +130,6 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 * 配合使用
 	- 破解版宝塔面板 https://btpanel.net/
 >某萝莉大神，喜欢他的分享音乐，可惜找不到了
-	- 多合一脚本 https://btpanel.net/download/kaichou.html
+	- 多合一脚本 [https://btpanel.net/download/kaichou.html](https://btpanel.net/download/kaichou.html)
+
+### 

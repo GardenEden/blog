@@ -132,4 +132,7 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 >某萝莉大神，喜欢他的分享音乐，可惜找不到了
 	- 多合一脚本 [https://btpanel.net/download/kaichou.html](https://btpanel.net/download/kaichou.html)
 
-###
+### 查看centos配置信息
+```shell
+wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
+```

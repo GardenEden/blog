@@ -26,19 +26,19 @@ title: 常用命令
 
 ## centos底层环境
 ### yum环境
-```bash
+```shell
 yum -v
 yum update
 ```
 如果没有
 
 1. 下载最新的yum-3.2.28.tar.gz并解压
-```bash
+```shell
 wget http://yum.baseurl.org/download/3.2/yum-3.2.28.tar.gz
 tar xvf yum-3.2.28.tar.gz
 ```
 2. 进入目录，运行安装
-```bash
+```shell
 cd yum-3.2.28
 yummain.py install yum
 ```
@@ -46,44 +46,43 @@ yummain.py install yum
 >
 >可能是原来是缺少配置文件。在etc目录下面新建yum.conf文件，然后再次运行 yummain.py install yum，顺利完成安装。
 3. 最后更新系统。
-```bash
+```shell
 yum check-update
 yum update
 yum clean all
 ```
 ### curl打包安装
-```bash
+```shell
 yum update -y && yum install curl -y
 ```
 ### wget打包安装
-```bash
+```shell
 yum -y install wget
 ```
 
 ### 同步系统时间和时区
 1. 查看时间
-```bash
+```shell
 timedatectl
 ```
 2. 列出所有时区（可不用）
-```bash
+```shell
 list-timezones
 ```
 3. 将硬件时钟调整为与本地时钟一致,0 为设置为 UTC 时间
-```bash
+```shell
 set-local-rtc 1
 ```
 4. 设置系统时区为上海
-```bash
+```shell
 timedatectl set-timezone Asia/Shanghai
 ```
 5. 同步时间
-```bash
+```shell
 yum -y install ntp
 ntpdate ntp1.aliyun.com
 ```
 > 常用ntp服务器
-
 |来源	|地址				|
 |--		|--					|
 |中国	|cn.ntp.org.cn		|
@@ -96,27 +95,27 @@ ntpdate ntp1.aliyun.com
 ### 升级centos内核
 
 1. 升级bbr内核 4.xxx 版本
-```bash
+```shell
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
 2. 升级内核 5.xx 版本 可以装wiregurand
-```bash
+```shell
 wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
 ```
 
 
 ### 安装fq软件
 1. 最完美的ssr
-```bash
+```shell
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
 ```
 2. 最全面的v2ray+ss+telegram代理
 [使用详细教程](https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC)
-```bash
+```shell
 bash <(curl -s -L https://git.io/v2ray.sh)
 ```
 3. 最方便的wiregurand
-```bash
+```shell
 wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
 ```
 	- 各类工具下载地址  [https://tlanyan.me/v2ray-clients-download/](https://tlanyan.me/v2ray-clients-download/)
@@ -125,7 +124,7 @@ wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_insta
 
 
 ### 宝塔面板
-```bash
+```shell
 yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
 ```
 * 配合使用

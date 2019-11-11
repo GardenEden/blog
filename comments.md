@@ -4,81 +4,81 @@ title: 常用命令
 ---
 ### md代码块类型
 
-|名称		|关键字						|
-|--			|--							|
-|Shell		|bash , shell				|
-|C#			|c-sharp , csharp			|
-|CSS		|css						|
-|SASS&SCSS	|sass , scss				|
-|Erlang		|erl , erlang				|
-|Java		|java						|
-|JavaScript	|js , jscript , javascript	|
-|PHP		|php						|
-|Shell		|bash , shell				|
-|Python		|py , python				|
-|Ruby		|ruby , rails , rb			|
-|Scala		|scala						|
-|SQL		|sql						|
-|VisualBasic|vb , vbnet					|
-|XML		|xml , xhtml				|
-|Swift		|swift						|
-|GO			|go , golang				|
+|名称				|关键字										|
+|--					|--												|
+|Shell			|bash , shell							|
+|C#					|c-sharp , csharp					|
+|CSS				|css											|
+|SASS&SCSS	|sass , scss							|
+|Erlang			|erl , erlang							|
+|Java				|java											|
+|JavaScript	|js , jscript , javascript|
+|PHP				|php											|
+|Shell			|bash , shell							|
+|Python			|py , python							|
+|Ruby				|ruby , rails , rb				|
+|Scala			|scala										|
+|SQL				|sql											|
+|VisualBasic|vb , vbnet								|
+|XML				|xml , xhtml							|
+|Swift			|swift										|
+|GO					|go , golang							|
 
 ## centos底层环境
 ### yum环境
-```shell
-yum -v  
-yum update 
+```bash
+yum -v
+yum update
 ```
 如果没有
 
 1. 下载最新的yum-3.2.28.tar.gz并解压
-```shell
+```bash
 wget http://yum.baseurl.org/download/3.2/yum-3.2.28.tar.gz
-tar xvf yum-3.2.28.tar.gz  
+tar xvf yum-3.2.28.tar.gz
 ```
 2. 进入目录，运行安装
-```shell
-cd yum-3.2.28  
-yummain.py install yum  
+```bash
+cd yum-3.2.28
+yummain.py install yum
 ```
 > 如果结果提示错误： CRITICAL:yum.cli:Config Error: Error accessing file for config file:///etc/
-> 
+>
 >可能是原来是缺少配置文件。在etc目录下面新建yum.conf文件，然后再次运行 yummain.py install yum，顺利完成安装。
 3. 最后更新系统。
-```shell
-yum check-update  
-yum update  
-yum clean all  
+```bash
+yum check-update
+yum update
+yum clean all
 ```
 ### curl打包安装
-```shell
+```bash
 yum update -y && yum install curl -y
 ```
 ### wget打包安装
-```shell
+```bash
 yum -y install wget
 ```
 
 ### 同步系统时间和时区
 1. 查看时间
-```shell
+```bash
 timedatectl
 ```
 2. 列出所有时区（可不用）
-```shell
+```bash
 list-timezones
 ```
 3. 将硬件时钟调整为与本地时钟一致,0 为设置为 UTC 时间
-```shell
+```bash
 set-local-rtc 1
 ```
 4. 设置系统时区为上海
-```shell
+```bash
 timedatectl set-timezone Asia/Shanghai
 ```
 5. 同步时间
-```shell
+```bash
 yum -y install ntp
 ntpdate ntp1.aliyun.com
 ```
@@ -95,27 +95,27 @@ ntpdate ntp1.aliyun.com
 ### 升级centos内核
 
 1. 升级bbr内核 4.xxx 版本
-```shell
+```bash
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
 2. 升级内核 5.xx 版本 可以装wiregurand
-```shell
+```bash
 wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
 ```
 
 
 ### 安装fq软件
 1. 最完美的ssr
-```shell
+```bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
 ```
 2. 最全面的v2ray+ss+telegram代理
 [使用详细教程](https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC)
-```shell
+```bash
 bash <(curl -s -L https://git.io/v2ray.sh)
 ```
 3. 最方便的wiregurand
-```shell
+```bash
 wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
 ```
 	- 各类工具下载地址  [https://tlanyan.me/v2ray-clients-download/](https://tlanyan.me/v2ray-clients-download/)
@@ -124,7 +124,7 @@ wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_insta
 
 
 ### 宝塔面板
-```shell
+```bash
 yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
 ```
 * 配合使用
@@ -132,4 +132,4 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 >某萝莉大神，喜欢他的分享音乐，可惜找不到了
 	- 多合一脚本 [https://btpanel.net/download/kaichou.html](https://btpanel.net/download/kaichou.html)
 
-### 
+###

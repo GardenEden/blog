@@ -134,5 +134,5 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 
 ### 查看centos配置信息
 ```shell
-wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh && chmod +x wireguard_install.sh && ./wireguard_install.sh
+wget https://raw.githubusercontent.com/GardenEden/gardeneden.github.io/master/sh/checkSystemConfig.sh && chmod +x checkSystemConfig.sh && ./checkSystemConfig.sh
 ```

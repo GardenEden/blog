@@ -83,6 +83,7 @@ yum -y install ntp
 ntpdate ntp1.aliyun.com
 ```
 > 常用ntp服务器
+
 |来源	|地址				|
 |--		|--					|
 |中国	|cn.ntp.org.cn		|

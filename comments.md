@@ -111,7 +111,7 @@ title: 常用命令
 |--																								|--																						|
 |su -																							|切换到root权限（与su有区别）									|
 |shutdown -h now																	|关机																					|
-|shutdown -r now																	|重启																					|
+|reboot																	|重启																					|
 |top																							|罗列使用CPU资源最多的linux任务 （输入q退出）	|
 |pstree																						|以树状图显示程序															|
 |man ping																					|查看参考手册（例如ping 命令）								|
@@ -125,7 +125,7 @@ title: 常用命令
 |杀死进程命令	|解析					|
 |--						|--						|
 |ps -ef				|查看所有进程	|
-|kill -9 xxx	|杀死进程			|
+|kill -9 xxx（PID）	|杀死进程			|
 
 
 ## centos底层环境
